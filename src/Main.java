@@ -25,27 +25,27 @@ public class Main {
         System.out.println("Задание №3");
         int year = 2024;
         if (year >= 1584) {
-            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        } else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
                 System.out.println(year + " год является високосным");
-            } else {
+        } else {
                 System.out.println(year + " год не является високосным");
             }
             System.out.println();
             System.out.println("Задание №4");
-            int deliveryDistance = 93;
+            int deliveryDistance = 95;
             int deliveryTime = 1;
             if (deliveryDistance > 100) {
                 System.out.println("Доставки нет");
-            } else if (deliveryDistance <= 20) {
+            } else if (deliveryDistance < 20) {
                 System.out.println("Потребуется дней: " + deliveryTime);
-            } else if (deliveryDistance <= 60) {
+            } else if (deliveryDistance < 60) {
                 System.out.println("Потребуется дней: " + (deliveryTime + 1));
-            } else if (deliveryDistance <= 100) {
+            } else if (deliveryDistance < 100) {
                 System.out.println("Потребуется дней: " + (deliveryTime + 2));
             }
             System.out.println();
-            System.out.println("Задание №5");
-            int monthNumber = 13;
+            System.out.println("Задание № 5");
+            int monthNumber = 12;
             switch (monthNumber) {
                 case 1:
                     System.out.println("зима");
@@ -88,4 +88,3 @@ public class Main {
             }
         }
     }
-}
